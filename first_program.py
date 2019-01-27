@@ -56,4 +56,15 @@ def display_cover(top,bottom ):
 img=display_cover(top='top',bottom='bottom')
 img.save('sample-out.png')
 IPythonImage(filename='sample-out.png')
-
+***************************************************************************************************************************
+when i run this program, i get this message:
+    raceback (most recent call last):
+  File "/Users/nadomat/Documents/GitHub/python_first_programm/first_program.py", line 56, in <module>
+    img=display_cover(top='top',bottom='bottom')
+  File "/Users/nadomat/Documents/GitHub/python_first_programm/first_program.py", line 27, in display_cover
+    band_name_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 25) #25pt font
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/PIL/ImageFont.py", line 280, in truetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/PIL/ImageFont.py", line 145, in __init__
+    layout_engine=layout_engine)
+OSError: cannot open resource
